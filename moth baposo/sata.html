@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>모뜨모뜨 통합 배포소</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Gowun Batang;
+      
+      color: white;
+      text-decoration: none;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      
+      background-color: #5f7691;
+    }
+
+    .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 상단 메뉴 */
+    header {
+      background-color: #293d53;
+      color: white;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      
+      max-width: 1040px;
+      
+    }
+
+    .site-name {
+      font-size: 1.5em;
+      transition: transform 0.3s ease;
+    }
+    .site-name:hover {
+        transform: scale(1.1);
+    }
+
+    .nav-menu a {
+      color: white;
+      margin-left: 40px;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-menu a:hover {
+        transform: scale(1.2);
+    }
+
+    /* 메인 이미지 섹션 */
+    main {
+      padding: 50px 0;
+      min-height: calc(100vh - 130px);
+      background-color: #5f7691;
+    }
+    .content-section {
+  padding: 0 0;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* 모바일 대응 */
+}
+
+.box1{margin-top: 50px;display: block;}
+
+
+.left-column, .right-column {
+  flex: 1 1 45%;
+}
+
+/* 텍스트 스타일 */
+.left-column p {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.left-column .small {
+  font-size: 0.8em;
+  padding-top: 20px;
+}
+
+.left-column .gray {
+  color: #cfcfcf;
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+.left-column .large {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* 버튼 스타일 */
+.button {
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 이미지 */
+.right-column img {
+  max-height: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.round{border-radius: 100%;}
+
+/* 반응형 대응 */
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    flex: 1 1 100%;
+  }
+
+  
+.box1{display: none;}
+}
+
+    /* 푸터 */
+
+    .footer-inner {
+      text-align: center;
+      
+      color: #b9b9b9;
+      font-size: 0.8rem;
+      padding: 20px 0;
+    }
+
+    /* 반응형 스타일 */
+    @media (max-width: 600px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        gap: 10px;
+      }
+
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+      }
+
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-link img {
+        max-width: 100%;
+        height: auto;
+      }
+
+
+      .image-link:first-child img {
+      padding-top: 0px;
+          }
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 상단 메뉴 -->
+  <header>
+    <div class="inner header-inner">
+      <div class="site-name"><a href="./index.html">모뜨모뜨 통합 배포소</a></div>
+      <nav class="nav-menu">
+        <a href="./sata.html">사타</a>
+        <a href="./pepa.html">페파</a>
+        <a href="./abm.html">CV정보</a>
+        <a href="./tou.html">사용규약</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 섹션 -->
+  <main>
+    <section class="content-section">
+      <div class="inner two-column">
+        
+        <!-- 왼쪽 열 -->
+        <div class="left-column">
+          <div class="box1"></div>
+          <p class="small gray">반품되기 싫은 로봇 메이드</p>
+          <p class="large">사타 :SATA</p>
+          <p>속삭이는듯한 약한 목소리의 음원입니다.<br>
+            일본어와 한국어 단음을 지원합니다.            </p>
+            
+          <div class="box1"></div>
+            <iframe width="100%" height="200px" src="https://www.youtube.com/embed/oNoTZI8_Nj8?si=qQ87t8KVsh8CxjvF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="200px" src="https://www.youtube.com/embed/3EIwapWrTfg?si=r-mLlmR7cD1T67u2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+        </div>
+    
+        <!-- 오른쪽 열 -->
+        <div class="right-column">
+          <img src="./image/SataStanding.png" alt="SataStanding">
+        </div>
+    
+      </div>
+    </section>
+    
+    <div class="box1"></div>
+    <section class="content-section">
+      <div class="inner two-column">
+        
+        <!-- 왼쪽 열 -->
+        <div class="left-column">
+          <p class="small gray">DOWNLOAD</p>
+          <p class="large">다운로드</p>
+          <p>TIPS 엔진의 사용을 추천합니다.
+            gender 피라미터를 -10 ~ -20정도 낮추어 사용하는 것을 권장합니다<br>
+            통합 음원으로 일본어 ust가 사용 가능합니다.<br>
+            KO CV 포메나이저는 오류가 잦아 KO CBNN 포메나이저 사용을 권장드립니다.<br>
+            옾타우가 튕길 경우엔 ko-CV.ini 파일을 삭제해주세요.<br>
+            사용 전 readme.txt 혹은 이용규약을 읽어주세요.<br>
+            </p>
+            
+          <p class="small">v1.1 250409 누락된 녹음파일 추가,받침 어미숨등 사소한 녹음 추가, KO CBNN 포메나이저에 호환되도록 에일리언스 추가</p>
+          <div class="box1"></div>
+          <a href="https://drive.google.com/file/d/1ibOiMKstKHEeY528xDFzFvAf7miMcvKA/view" class="button">SATA (ko_ja CV)v1.1 다운로드</a>
+          <a href="./tou.html" class="button">이용규약</a>
+        </div>
+    
+      </div>
+    </section>
+    
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <section class="content-section">
+      <div class="inner two-column">
+        
+        <!-- 왼쪽 열 -->
+        <div class="left-column">
+          
+          <div class="box1"></div>
+          <p class="small gray">INFO</p>
+          <p class="large">사타 :SATA</p>
+          <p>생일: 8월 9일</p>
+          <p>키: 150cm</p>
+          <p> 커스텀 기종이지만 한번 반품당한 후 골칫덩이가 된 적이 있다. <br>
+            현재는 새 주인을 찾았지만 또 반품당할거라는 두려움이 마음 깊숙한 곳에 있고, <br>
+            태업하거나 사고를 쳐서 이래도 나를 버리지 않는지 확인하곤 한다.</p>
+            <p>좋아하는것: 햇살을 받으며 태양광 충전하기(느린 충전 속력), 청소하는 척 하면서 놀기, 쓰다듬 받기</p>
+            <p>싫어하는 것: 반품 관련 단어, 새로운 전자제품이 들어오는 것, 먼지냄새</p>
+            
+        </div>
+    
+        <!-- 오른쪽 열 -->
+         
+    <div class="box1"></div>
+        <div class="right-column">
+          <img class="round" src="./image/sataInfo.png" alt="SataStanding">
+        </div>
+    
+      </div>
+    </section>
+  </main>
+
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="inner footer-inner">
+        copyright &copy; 2025 모뜨모뜨 통합 배포소 all right reserved
+    </div>
+  </footer>
+
+</body>
+</html>
