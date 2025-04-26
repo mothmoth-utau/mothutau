@@ -135,63 +135,6 @@ margin: 0 auto;
 
 .round{border-radius: 100%;}
 
-/* 반응형 대응 */
-@media (max-width: 768px) {
-.two-column {
-flex-direction: column;
-}
-
-.left-column, .right-column {
-flex: 1 1 100%;
-}
-
-
-.box1{display: none;}
-}
-
-/* 푸터 */
-
-.footer-inner {
-  text-align: center;
-  
-  color: #b9b9b9;
-  font-size: 0.8rem;
-  padding: 20px 0;
-}
-
-/* 반응형 스타일 */
-@media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-    gap: 10px;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 100%;
-  }
-
-  .image-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-link img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-  .image-link:first-child img {
-  padding-top: 0px;
-      }
-
-}
-
 
      /* 메인 이미지 섹션 */
      main {
@@ -269,12 +212,64 @@ flex: 1 1 100%;
       font-size: 0.8rem;
       padding: 20px 0;
     }
-     /* 푸터 */
- 
-     .footer-inner {
-       text-align: center;
- 
-       color: #b9b9b9;
-       font-size: 0.8rem;
-       padding: 20px 0;
-     }
+     .touMini{font-size: 1.1rem;color: #d3d3d3;}
+
+
+     
+/* 반응형 대응 */
+@media (max-width: 768px) {
+  .two-column {
+  flex-direction: column;
+  }
+  
+  .left-column, .right-column {
+  flex: 1 1 100%;
+  }
+  
+  
+  .box1{display: none;}
+  }
+  
+  /* 푸터 */
+  
+  .footer-inner {
+    text-align: center;
+    
+    color: #b9b9b9;
+    font-size: 0.8rem;
+    padding: 20px 0;
+  }
+  
+  /* 반응형 스타일 */
+  @media (max-width: 600px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 20px;
+      gap: 10px;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100vw;
+    }
+  
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-link img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+  
+    .image-link:first-child img {
+    padding-top: 0px;
+        }
+  
+  }
+  
