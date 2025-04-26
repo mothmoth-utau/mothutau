@@ -109,6 +109,11 @@ font-weight: bold;
 font-size: 2rem;
 font-weight: bold;}
 
+/* 이용규약 텍스트 스타일 */
+     .touMini{font-size: 1.1rem;color: #d3d3d3;}
+
+
+
 /* 버튼 스타일 */
 .button {
 display: block;
@@ -212,7 +217,6 @@ margin: 0 auto;
       font-size: 0.8rem;
       padding: 20px 0;
     }
-     .touMini{font-size: 1.1rem;color: #d3d3d3;}
 
 
      
