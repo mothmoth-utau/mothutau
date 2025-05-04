@@ -86,8 +86,8 @@ flex: 1 1 45%;
 
 /* 텍스트 스타일 */
 .left-column p {
-margin-bottom: 12px;
 text-align: left;
+line-height: 190%;
 }
 
 .left-column .small {
@@ -104,13 +104,15 @@ letter-spacing: 5px;
 .left-column .large {
 font-size: 4rem;
 font-weight: bold;
+padding-bottom: 20px;
 }
 .left-column .large span{
 font-size: 2rem;
 font-weight: bold;}
 
 /* 이용규약 텍스트 스타일 */
-     .touMini{font-size: 1.1rem;color: #d3d3d3;}
+     .touTitle{font-size: 1.2rem;color: #ffffff;}
+     .touMain{font-size: 1rem;color: #fff;}
 
 
 
